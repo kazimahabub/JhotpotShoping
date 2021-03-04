@@ -1,0 +1,1133 @@
+*{margin: 0px;padding: 0px;box-sizing: border-box;font-family: sans-serif;transition: all .2s linear;text-transform: capitalize;}
+html{font-size: 52.5%;scroll-behavior: smooth;}
+body{overflow-x: hidden;}
+
+
+div#loder-effect{
+    width: 100%;
+    height: 100vh;
+    background-image: url(1_e_Loq49BI4WmN7o9ItTADg.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 999999999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+header#header{
+    display: flex;align-items: center;justify-content: space-between;padding: 1.5rem 2.5rem;color: #fff;
+    background: rgb(51 51 51 / 72%);
+}
+.fa-bars{
+    font-size: 3rem;z-index: 10000;cursor:pointer;
+}
+.logo{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.logo:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo i{
+    padding: 0.5rem;
+}
+.logo h1{
+    display: inline;
+}
+
+div.left{
+
+}
+
+.fa-shopping-cart{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.search-container{
+    display: inline;
+    position: relative;
+}
+#search{
+    position: absolute;
+    top: -1.5rem;right: 0.8rem;
+    height: 3.5rem;
+    width: 3.5rem; 
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5rem;
+}
+#search:hover{
+    width: 25rem;
+}
+.fa-search{
+    position: absolute;
+    top: -.7rem ;left: -30px;
+    font-size: 2rem;
+    color: #333;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.navbar{
+    position: fixed;
+    top: 0px;left: 0px;
+    height: 100vh;
+    width: 35rem;
+    background: rgba(0, 0, 0, .9);
+    padding: 0px;
+    display: none;
+}
+
+.navbar ul{
+    height: 100%;
+    width: 35rem;
+    background: #333;
+    align-items: center;
+    display: flex;  
+    justify-content: center;
+    list-style: none;
+    flex-flow: column;
+}
+
+.navbar ul li{
+    margin: 0.5rem 0;
+}
+
+.navbar ul li a{
+    width: 25rem;
+    height: 4rem;
+    background: #fff;
+    display: block;
+    text-align: center;
+    border-radius: 5rem;
+    font-size: 2rem;
+    line-height: 4rem;
+}
+
+.navbar ul li a.btnLog{
+    background: linear-gradient(orange , salmon , gold);
+    color: white;
+    font-weight: 900;
+}
+.navbar ul li a.btnLog:hover{
+    color: rgb(196, 196, 196);
+}
+
+.navbar ul li a:hover{
+    text-decoration: none;
+    background: red;
+    letter-spacing: 0.6rem;
+    color: #fff;
+}
+
+#home{background: #333;}
+
+div.slide{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.contents{
+
+}
+div.contents h1{
+    font-size: 4rem;
+    color: #fff;
+}
+div.contents p{
+    font-size: 1.7rem;
+    color: #ccc;
+}
+
+div.image{padding-right: 3rem;}
+div.image img{
+    width:40vw !important;
+}
+div.stars{
+    margin: 1rem 0rem;
+}
+div.stars i{
+    font-size: 1.8rem;
+    color: gold;
+}
+h3.price{
+    font-size: 3.9rem;
+    color: navajowhite;
+    margin: 0.8rem 0rem;
+}
+a.button_link button{
+    text-transform: uppercase;
+    background: salmon;
+    height: 4rem;
+    width: 17rem;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    margin: .7rem 0rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+a.button_link button:hover{
+    background: rgb(181, 86, 236);
+    letter-spacing: .1rem;
+}
+section#home .owl-nav .owl-prev{
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%);
+    color: red;
+    font-size: 8rem;
+    background: none;
+    outline: none;
+    border: none;
+    left: 1.2rem;
+}
+section#home .owl-nav .owl-next{
+    right: 1.2rem;
+    position: absolute;
+    top: 45%;
+    transform: translate(+50%);
+    color: red;
+    font-size: 8rem;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+#home .owl-dots{
+    position: absolute;
+    display: block;
+    bottom: 15%;left: 50%;
+    transform: translateX(-50%);
+}
+#home .owl-dot{
+    border: none;
+    outline: none !important;
+}
+
+
+/* product section design start */
+
+#product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    width: 100vw;
+    background: #fff;
+}
+h1.heading{
+    font-size: 4rem;
+    color: salmon;
+    padding-top: 5rem;
+    margin: 2rem 0rem;
+    font-weight: 900;
+    position: relative;
+}
+h1.heading::after{
+    content: "";
+    position: absolute;
+    bottom: -1rem;left: 50%;
+    transform: translateX(-50%);
+    height: .4rem;
+    width: 60%;
+    background: salmon;
+}
+
+div.product-container{
+    width: 90%;
+}
+div.product-container h2.title{
+    font-size: 3rem;
+    margin-top: 4rem;
+    color: salmon;
+    text-align: center;
+}
+
+div.product-slider{
+    
+}
+div.product-card{
+    height: 49rem;
+    width: 36rem;
+    margin: 2rem auto;
+    box-shadow: 0 0 .3rem rgba(0, 0, 0, .5);
+    border-radius: .5rem;
+    position: relative;
+}
+
+div.product-card:hover div.info{
+    transform: scale(1);
+    opacity: 1;
+}
+
+div.imageTwo{
+    height: 75%;
+    width: 100%;
+}
+div.imageTwo img{
+    height: 95%;
+    width: 100% !important;
+    object-fit: cover;
+}
+div.content{
+    height: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+div.content h3.priceTwo{
+    font-size: 3rem;
+    color: slateblue;
+}
+div.priceTwo{
+    font-size: 2.5rem;
+    color: salmon;
+    font-weight: 500;
+}
+div.info{
+    position: absolute;
+    top: 0;left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(51 51 51 / 49%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    transition-delay: 0.01s;
+    transform: scale(0);
+    opacity: 0;
+    
+}
+div.info h4{
+    font-size: 4rem;
+    color: #FFF;
+}
+div.info p{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #ccc;
+}
+div.info a button{
+    background: coral;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+div.info a button:hover{
+    background: red;
+    letter-spacing:0.3rem;
+}
+
+div.share{
+    margin-top: 4rem;
+}
+div.share a{
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    line-height: 4rem;
+    background: #fff;
+    color: salmon;
+    text-align: center;
+    margin: 0px 0.5rem;
+    border-radius: 5rem;
+    text-decoration: none;
+}
+div.share a:hover{
+    background: salmon;
+    color: #fff;
+}
+
+section#product .owl-nav .owl-prev{
+    position: absolute;
+    top: 37%;
+    transform: translate(-50%);
+    color: red;
+    font-size: 8rem;
+    background: none;
+    outline: none;
+    border: none;
+    left: 1.2rem;
+}
+section#product .owl-nav .owl-next{
+    right: 1.2rem;
+    position: absolute;
+    top: 37%;
+    transform: translate(+50%);
+    color: red;
+    font-size: 8rem;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+a.othersLink{
+    display: block;
+    font-size: 2.5rem;
+    color: salmon;
+    text-decoration: none;
+    font-weight: 700;
+}
+a.othersLink:hover{
+    color: red;
+    letter-spacing: 0.3rem;
+}
+
+.owl-dots{
+    position: absolute;
+    bottom: 15%;left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+.owl-dot{
+    border: none;
+    outline: none !important;
+}
+
+
+/* product section design end */
+
+
+/* review section design start*/
+
+#review{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background-image: url(background_review4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-blend-mode: screen;
+    position: relative;
+    clip-path: circle(50% at 50% 50%);
+    margin-top: 51px;
+}
+
+div.heading{
+    color: salmon;
+    padding-top: 7rem;
+    font-size: 4rem;
+    color: salmon;
+    margin: 2rem 0rem;
+    font-weight: 900;
+    position: relative;
+
+}
+
+div.heading::after{
+    content: "";
+    position: absolute;
+    bottom: -1rem;left: 50%;
+    transform: translateX(-50%);
+    height: .4rem;
+    width: 60%;
+    background: salmon;
+}
+
+div.box-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.review-slider{
+
+}
+
+div.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1);
+    transition: all 0.6s;
+}
+
+div.box:hover div.image_three img{
+    transform: scale(0.8);
+}
+
+div.image_three{
+    margin-top: 10rem;
+    margin-left: 3rem;
+}
+
+div.image_three img{
+    width: 10rem !important;
+    height: 10rem !important;
+    border-radius: 50% 50% 50% 0%;
+    border: 4px solid salmon;
+}
+
+div.comment{
+    height: 21rem;
+    width: 42rem;
+    background: rgb(64 213 137 / 48%);
+    border-radius: 4% 31% 0% 64%;
+    padding-top: 2rem;
+}
+
+div.comment p{
+    color: rgb(197, 197, 197);
+    font-size: 1.7rem;
+    padding: 2rem;
+    font-weight: 600;
+    text-align: right;
+}
+
+div.comment p i{
+    font-size: 2rem;
+    color: salmon;
+    padding:0 .6rem;
+}
+div.comment h3{
+    color: #fff;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: right;
+    margin:0 2rem;
+}
+
+
+#review .owl-nav .owl-prev{
+    position: absolute;
+    top: 37%;
+    transform: translate(-50%);
+    color: red;
+    font-size: 8rem;
+    background: none;
+    outline: none;
+    border: none;
+    left: 14%;
+}
+#review .owl-nav .owl-next{
+    right: 14%;
+    position: absolute;
+    top: 37%;
+    transform: translate(+50%);
+    color: red;
+    font-size: 8rem;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+
+/* review section design end*/
+
+/* offers section design start*/
+
+#offer{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background: #fff;
+}
+
+div.images_four{
+    min-height: 50vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+div.box_three{
+    width: 30rem;
+    height: 25rem;
+    text-align: center;
+    margin: 2rem;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+div.box_three:hover{
+    transform: scale(0.8);
+}
+
+div.box_three img{
+    width: 30rem;
+    height: 20rem;
+}
+div.box_three h3{
+    margin: 0.8rem 0;
+    font-size: 2.5rem;
+    color: salmon;
+}
+
+
+
+div.dealProduct{
+    background-image: url(../image/productBg.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: screen;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    background-position: center;
+    padding: 5rem 0rem;
+}
+
+div.images_five img{
+    height: 50vh;
+}
+div.otherDesign{
+    text-shadow: .1rem .1rem .3rem #333;
+    width: fit-content;
+    text-align: left;
+}
+
+div.otherDesign h3{
+    font-size: 4rem;
+    color: wheat;
+}
+div.otherDesign p{
+    font-size: 2.5rem;
+    color: white;
+}
+div.other{
+    font-size: 3.8rem;
+}
+
+a.btn button{
+    padding: 0.6rem 3rem;
+    font-size: 2.5rem;
+    background: salmon;
+    border-radius: 5rem;
+    outline: none;
+    border: none;
+    color: cornsilk;
+    font-weight: 600;
+}
+
+a.btn button:hover{
+    background: cornsilk;
+    color: salmon;
+    letter-spacing: 0.4rem;
+}
+
+
+
+/* offers section design end*/
+
+/* brand section design start */
+
+div.brand_block{
+    width: 100vw;
+}
+div.brand-slider{
+
+}
+div.brand-slider img.item{
+    width: 15rem;
+    height: 8rem;
+    margin: 4rem auto;
+}
+
+
+/* brand section design end */
+
+
+/* newsletters section design start */
+
+#newsletters{
+    width: 100vw;
+    background-image: url(../image/background_review.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 6rem 0rem;
+    text-align: center;
+}
+#newsletters h1{
+    font-size: 6rem;
+    color: #fff;
+}
+#newsletters p{
+    color: #f9f9f9;
+    font-size: 3rem;
+}
+#newsletters input.inputOne{
+    width: 34rem;
+    height: 4rem;
+    outline: none;
+    border: none;
+    background: rgba(51, 51, 51, 0.685);
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+    padding: 2.5rem;
+}
+#newsletters input.inputOne::placeholder{
+    color: rgb(202, 198, 198);
+}
+
+#newsletters input.inputTwo{
+    padding: 0.6rem 3rem;
+    font-size: 2.5rem;
+    background: salmon;
+    border-radius: 5rem;
+    outline: none;
+    border: none;
+    color: cornsilk;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+#newsletters input.inputTwo:hover{
+    background: cornsilk;
+    color: salmon;
+    letter-spacing: 0.4rem;
+}
+
+
+/* newsletters section design end */
+
+
+/* footer section design start */
+
+footer#footer{
+    padding: 6rem 0rem;
+    background: #333;
+    width: 100vw;
+}
+
+div.row{
+    width: 100%;
+    margin: 0;
+}
+div.brand-info{
+    color: #fff;
+    margin-bottom: 35px;
+}
+div.brand-info a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 3rem;
+}
+div.brand-info a i{
+    font-size: 3.5rem;
+    margin-right: 1.6rem;
+}
+div.brand-info a h3{
+    font-size: 3rem;
+}
+
+div.brand-info p{
+    color: #ccc;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0rem;
+}
+
+div.links{
+    color: #fff;
+    margin-bottom: 35px;
+}
+div.links h3{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+div.nav-links{
+
+}
+div.nav-links a{
+    display: list-item;
+    list-style: none;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 2rem;
+    border-bottom: 2px solid gray;
+    line-height: 35px;
+}
+
+div.nav-links a:last-child{
+    border-bottom: none;
+}
+
+div.nav-links a:hover{
+    color: rgb(5, 202, 5);
+    text-decoration: underline;
+}
+
+div.follow-us{
+    color: #fff;
+    margin-bottom: 35px;
+}
+div.follow-us h3{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+div.follow-us-link{
+
+}
+
+div.follow-us-link a{
+    text-decoration: none;
+    color: #ccc;
+    font-size: 2rem;
+    display: list-item;
+    list-style: none;
+    line-height: 35px;
+}
+
+div.icon_block{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+div.icon_block a{
+    width: 6rem;
+    height: 6rem;
+    display: block;
+    background: #fff;
+    border-radius: 5rem;
+    text-decoration: none;
+    color: salmon;
+}
+
+div.icon_block a:hover{
+    color: white;
+    background: salmon;
+}
+
+div.icon_block a i{
+    font-size: 4rem;
+    padding: 1rem;
+}
+
+div.credit{
+    background: #1a1a1a;
+    padding: 4rem 0rem;
+    color: #ccc;
+    font-size: 2rem;
+    border-top: 1px solid gray;
+}
+div.credit span{
+    color: salmon;
+}
+
+div.loginBtn{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+div.loginBtn a.btnLog2{
+    padding: 10px 15px;
+    font-size: 2rem;
+    background: linear-gradient(orange , red , orange);
+    margin-right: 20px;
+    border-radius: 1rem;
+    font-weight: 900;
+    transition: all 0.4s;
+}
+div.loginBtn a.btnLog2:last-child{
+    margin-right: 0px;
+}
+div.loginBtn a.btnLog2:hover{
+    color: yellowgreen;
+}
+
+
+/* footer section design end */
+
+
+
+/* about us section design start */
+
+div.main_about_block{
+    padding: 70px 0px;
+    background: white;
+}
+div.colBlock img{
+    width: 100%;
+    border-radius: 20%;
+    border: 2px solid salmon;
+    height: 100%;
+}
+div.colBlock h2{
+    font-size: 4.5rem;
+    color: salmon;
+    font-weight: 900;
+    margin-top: 1.6rem;
+}
+div.colBlock p.about_para{
+    font-size: 2rem;
+    color: gray;
+    margin-top: 5rem;
+}
+
+/* about us section design end */
+
+/* cart section design start */
+
+div.cart_page_block{
+    margin: 80px auto;
+}
+div.cart_page_block table{
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+
+div.cart_page_block table tr th{
+    font-size: 2.5rem;
+    text-align: center;
+    background: salmon;
+    color: #fff;
+    padding: 5px;
+}
+
+div.cart_page_block table tr td{
+    padding: 20px 5px;
+}
+
+div.cart_info{
+    display: flex;
+    flex-wrap: wrap;
+}
+div.cart_info img{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+a.buyBtn{
+    background: linear-gradient(orange,red , orange);
+    padding: 8px 40px;
+    border-radius: 1rem;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-decoration: none;
+    transition: all 0.6s;
+}
+a.buyBtn:hover{
+    color: rgb(241, 190, 95);
+}
+
+div.cart_info div p{
+    font-size: 2rem;
+    font-weight: 900;
+}
+div.cart_info div small{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: salmon;
+}
+div.cart_info div a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: sandybrown;
+}
+div.cart_page_block table tr td input{
+    width: 70px;
+    height: 40px;
+    padding: 8px 10px;
+    border: 2px solid orange;
+    font-size: 2rem;
+    outline: none;
+}
+div.cart_page_block table tr td span{
+    font-size: 2.5rem;
+    color: salmon;
+}
+
+
+/* cart section design end */
+
+
+/* account page design start */
+
+div.account_page{
+    background:#64191991;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: screen;
+    height:;
+    width: 100vw;
+}
+
+div.custom_css{
+    background: #1a1a1ac2;
+    padding: 45px;
+    margin: 5rem 0rem;
+    box-shadow: 1px 1px 20px 2px black;
+    border-radius: 3rem;
+}
+div.custom_css h1{
+    color: salmon;
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: center;
+}
+div.custom_css label{
+    font-size: 2.5rem;
+    color: white;
+    margin-top: 30px;
+}
+
+div.custom_css input{
+    font-size: 2rem;
+    margin-top: 20px;
+    padding: 26px 19px;
+    border-radius: 1rem;
+}
+
+div.custom_css div{
+    text-align: center;
+}
+
+div.custom_css div a button.logButtonOne{
+    background: linear-gradient(orange,red , orange);
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 10px 30px;
+    margin-top: 50px;
+    border-radius: 1rem;
+    transition: all 0.4s;
+}
+div.custom_css div a button.logButtonOne:hover{
+    color: rgb(185, 245, 22);
+    letter-spacing: 0.3rem;
+}
+
+div.singup_page{
+    background:#64191991;
+ 
+}
+
+
+
+/* account page design end */
+
+
+/* media querie start*/
+@media (max-width:768px){
+
+    html{
+        font-size: 55%;
+    }
+
+    #home{
+        padding-bottom: 4rem;
+    }
+    div.slide{
+        flex-flow: column-reverse;
+    }
+    div.contents{
+        padding:4.9rem;
+    }
+    div.image img{
+        width: 100% !important;
+    }
+    .owl-dots{
+        display: none;
+    }
+    #home .owl-dots{
+        display: none;
+    }
+
+
+    div.box{
+        position: relative;
+        height: 45vh;
+    }
+
+    div.image_three{
+        position: absolute;
+        top: 0px;
+        z-index: 999999;
+        margin: 0;
+    }
+
+    div.image_three img{
+        border-radius: 5rem;
+    }
+    div.comment{
+        border-radius: 1rem;
+        width: 35rem;
+        height: 23rem;
+        margin-top:5rem;
+    }
+    div.comment p{
+        text-align: center;
+    }
+    div.comment h3{
+        text-align: center;
+    }
+    div.heading{
+        font-size: 3rem;
+    }
+
+    #offer{
+        flex-flow: column;
+    }
+    
+    div.dealProduct{
+        flex-flow: column;
+    }
+    div.otherDesign{
+        text-align: center;
+    }
+    div.product-card{
+        width: 80%;
+
+    }
+
+}
+
+
+@media (max-width:953px){
+    div.images_four{
+        flex-flow: column !important;
+    }
+}
+/* media querie end*/
